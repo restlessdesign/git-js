@@ -1,0 +1,28 @@
+{
+    "name": "git-js",
+    "description": "A JavaScript library to interact with Git",
+    "author": "Kevin Sweeney",
+    "version": "1.0.0",
+    "license": "MIT",
+    "keywords": [
+        "git"
+    ],
+    "main": "index.js",
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "mocha": "^2.5.3",
+        "sinon": "^1.17.4",
+        "sinon-chai": "^2.8.0"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha"
+    },
+    "homepage": "https://github.com/restlessdesign/git-js#readme",
+    "repository": "restlessdesign/git-js",
+    "bugs": {
+        "url": "https://github.com/restlessdesign/git-js/issues"
+    }
+}
