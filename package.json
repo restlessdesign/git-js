@@ -2,7 +2,7 @@
     "name": "git-js",
     "description": "A JavaScript library to interact with Git",
     "author": "Kevin Sweeney",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "keywords": [
         "git"
