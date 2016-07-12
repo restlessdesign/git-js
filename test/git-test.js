@@ -1,7 +1,5 @@
 // Imports _____________________________________________________________________
 
-const execSync = require('child_process').execSync;
-
 const chai = require('chai');
 const expect = chai.expect;
 const sinon = require('sinon');
