@@ -24,7 +24,12 @@ const git = {
      * @return {String} A string representation of the stdout stream.
      */
     _exec(cmd, opts) {
-        return execSync(`git ${cmd}`, opts).toString();
+        const result = execSync(`git ${cmd}`, opts).toString();
+
+        // Assuming that everyone will want to see stdout…
+        process.stdout.write(result);
+
+        return result;
     }
 };
 
