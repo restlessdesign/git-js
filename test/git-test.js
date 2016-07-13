@@ -4,7 +4,7 @@ const chai = require('chai');
 const expect = chai.expect;
 const sinon = require('sinon');
 
-const git = require('../index.js');
+const git = require('../git.js');
 
 // Test Suite __________________________________________________________________
 
@@ -43,6 +43,28 @@ describe('git', function() {
             expect(spy).to.have.thrown;
 
             git._exec.restore();
+        });
+
+        it('should send output to STDOUT by default', () => {
+            const spy = sinon.spy(process.stdout, 'write');
+
+            git.$status();
+
+            expect(spy).to.have.been.calledOnce;
+
+            process.stdout.write.restore();
+        });
+
+        it('should not display output to STDOUT when `git.print_output` is `false`', () => {
+            const spy = sinon.spy(process.stdout, 'write');
+
+            git.print_output = false;
+            git.$status();
+
+            expect(spy).to.not.have.been.called;
+
+            git.print_output = true;
+            process.stdout.write.restore();
         });
     });
 });
