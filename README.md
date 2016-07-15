@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/restlessdesign/git-js.svg?branch=master)](https://travis-ci.org/restlessdesign/git-js)
+
 # git-js
 
 A suite of methods used to interact with the Git CLI via Javascript
