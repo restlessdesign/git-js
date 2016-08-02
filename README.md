@@ -18,6 +18,10 @@ Dependencies:
 $ npm install git-js
 ```
 
+## Usage
+
+[View Example](https://gist.github.com/restlessdesign/028f6b85749152025f76362dcb79a362)
+
 ## License
 
 MIT
